@@ -1,0 +1,12 @@
+.qrWrapper {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  justify-items: center;
+}
+
+.spaceText {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}

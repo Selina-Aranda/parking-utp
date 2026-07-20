@@ -1,0 +1,52 @@
+.page {
+  min-height: 100vh;
+  background: #ffffff;
+  display: grid;
+  justify-content: center; 
+  align-items: center; 
+  gap: 24px;
+}
+
+.card {
+  max-width: 700px;
+  border-radius: 24px;
+  width: 100%;
+  padding: 90px;
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+.check {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid  #23d100;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  background-color: #23d100;
+  color: #ffffff
+}
+
+.title {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.note {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #333333;
+}
+
+.small {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333333;
+}
