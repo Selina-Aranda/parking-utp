@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "../styles/ExitSuccess.module.css";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo} from "react";
 
 function formatDateTime(value?: string) {
   if (!value) return "—";
@@ -15,7 +15,6 @@ function formatDateTime(value?: string) {
 export default function ExitSuccess() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [clock, setClock] = useState(() => new Date());
 
   const payload = useMemo(
     () => ({
@@ -32,13 +31,11 @@ export default function ExitSuccess() {
   );
 
   useEffect(() => {
-    const timer = window.setInterval(() => setClock(new Date()), 1000);
     const redirectTimer = window.setTimeout(() => {
       navigate("/");
     }, 8000);
 
     return () => {
-      window.clearInterval(timer);
       window.clearTimeout(redirectTimer);
     };
   }, [navigate]);
