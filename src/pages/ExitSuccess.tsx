@@ -15,7 +15,7 @@ function formatDateTime(value?: string) {
 export default function ExitSuccess() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [clock, setClock] = useState(() => new Date());
+  const setClock = useState(() => new Date());
 
   const payload = useMemo(
     () => ({
